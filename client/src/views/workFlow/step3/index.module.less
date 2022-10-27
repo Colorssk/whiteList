@@ -1,0 +1,52 @@
+.step3BodyContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    .righttableContainer{
+        width: 100%;
+        border-top-right-radius: 2px;
+        background: #101414;
+        height: 100%;
+
+        .titleContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 4px;
+            height: 32px;
+            color: white;
+            text-align: center;
+            line-height: 32px;
+            font-size: 12px;
+
+
+            .buttonContainer{
+                position: absolute;
+                right: 0;
+                height: 32px;
+                margin-right: 10px;
+
+            }
+        }
+    }
+}
+
+
+.tableCellRender {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.tableCellyellow {
+    color: #F9C152;
+}
+
+.cellTitle{
+    &::before{
+        content: '*';
+        color: red;
+    }
+}

@@ -1,0 +1,428 @@
+.workFlowContainer {
+    overflow: hidden;
+    height: 100vh;
+    background: #060707;
+
+
+
+    .titleContainer {
+        width: 100%;
+        height: 24px;
+        color: #FFEBC8;
+        font-family: Microsoft YaHei;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0px;
+        text-align: left;
+        padding-left: 24px;
+
+
+        :global {
+            .ss-btn {
+                float: right;
+                vertical-align: middle;
+                margin-right: 24px;
+                width: 88px;
+            }
+        }
+
+    }
+
+    .flowContainer {
+        width: calc(100% - 8px);
+        margin-top: 8px;
+        margin-left: 4px;
+        min-width: 1024px;
+        overflow-x: auto;
+        height: 160px;
+        border-radius: 2px;
+        background: #101414;
+        margin-bottom: 4px;
+        padding-top: 8px;
+
+        .infoTitle {
+            width: 100%;
+            height: 36px;
+            color: #FFEBC8;
+            font-family: Microsoft YaHei;
+            font-weight: regular;
+            font-size: 24px;
+            line-height: 36px;
+            letter-spacing: 0px;
+            text-align: left;
+            white-space: nowrap;
+            margin-top: 8px;
+            padding-left: 8px;
+        }
+
+        .flowButtonContainer {
+            width: 100%;
+            margin-top: 8px;
+            padding-left: 8px;
+
+            .contentBlcok {
+                width: auto;
+                height: 24px;
+                border-radius: 2px;
+                background: #1E2423;
+                display: inline-block;
+                margin-right: 4px;
+                padding-left: 8px;
+                padding-right: 8px;
+
+                .blockTitle {
+                    display: inline-block;
+                    height: 24px;
+                    color: #FFEBC8;
+                    font-family: Microsoft YaHei;
+                    font-weight: regular;
+                    font-size: 12px;
+                    line-height: 24px;
+                    letter-spacing: 0px;
+                    text-align: left;
+                }
+
+                .blockInfo {
+                    display: inline-block;
+                    height: 24px;
+                    color: #F9C152;
+                    font-family: Microsoft YaHei;
+                    font-weight: regular;
+                    font-size: 12px;
+                    line-height: 24px;
+                    letter-spacing: 0px;
+                    text-align: left;
+                    margin-left: 4px;
+                }
+            }
+        }
+    }
+
+    .CSSTransitionContainer {
+        width: 100%;
+        height: calc(100% - 253px);
+
+        .bodyContainer {
+            width: 100%;
+            height: 100%;
+            display: flex;
+
+            .tableContainer {
+                width: calc(100% - 360px);
+                border-top-right-radius: 2px;
+                background: #101414;
+                height: 100%;
+
+                .buttonContainer {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    padding: 4px;
+                    height: 32px;
+                }
+            }
+
+            .bodyRightContainer {
+                width: 352px;
+                margin-left: 4px;
+                height: 100%;
+                display: inline-block;
+                flex-direction: column;
+
+
+                .rightTopContainer {
+                    width: 100%;
+                    border-radius: 2px;
+                    background: #101414;
+                    height: calc(50% - 2px);
+                    margin-bottom: 4px;
+
+                    .rightTopTitleContainer {
+                        width: 100%;
+                        height: 28px;
+                        text-align: center;
+                        line-height: 28px;
+                        color: #FFEBC8;
+                        font-family: Microsoft YaHei;
+                        font-weight: regular;
+                        font-size: 12px;
+                        letter-spacing: 0px;
+
+                        .rightTopFloatButton {
+                            width: 12px;
+                            height: 16px;
+                            float: right;
+                            margin-top: 4px;
+                            margin-right: 8px;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .rightBottomInfo {
+                        width: 100%;
+                        display: block;
+                        height: 24px;
+                        color: #FFEBC8;
+                        font-family: Microsoft YaHei;
+                        font-weight: regular;
+                        font-size: 12px;
+                        line-height: 24px;
+                        letter-spacing: 0px;
+                        text-align: left;
+                        padding-left: 8px;
+                    }
+                }
+
+                .rightBottomContainer {
+                    width: 100%;
+                    border-radius: 2px;
+                    border-bottom-right-radius: 0;
+                    border-bottom-left-radius: 0;
+                    background: #101414;
+                    height: calc(50% - 2px);
+                    overflow-y: auto;
+                    position: relative;
+
+
+                    .rightBottomTitle {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        width: 100%;
+                        background: #101414;
+                        right: 12px;
+                        width: 348px;
+                        height: 28px;
+                        color: #FFEBC8;
+                        font-family: Microsoft YaHei;
+                        font-weight: regular;
+                        font-size: 12px;
+                        line-height: 28px;
+                        letter-spacing: 0px;
+                        text-align: center;
+                        z-index: 1;
+
+                        .refreshICon {
+                            width: 14px;
+                            height: 14px;
+                            float: right;
+                            margin-top: 8px;
+                            margin-right: 8px;
+                            transition-duration: 0.2;
+                            cursor: pointer;
+                        }
+
+                        .scrollActive {
+                            animation: refresh-rotate 0.2s linear;
+                        }
+
+                        @keyframes refresh-rotate {
+                            from {
+                                transform: rotate(0deg);
+                            }
+
+                            to {
+                                transform: rotate(360deg);
+                            }
+                        }
+                    }
+
+                    .rightBottomTitleOccupy {
+                        background: #101414;
+                        width: 100%;
+                        height: 28px;
+                        text-align: center;
+                    }
+
+                    .infoBlcok {
+                        width: 100%;
+                        // height: 107px;
+                        padding: 4px 8px;
+                        border-radius: 2px;
+                        background: #1E2423;
+                        margin-bottom: 4px;
+
+                        .infoTitleContainer {
+                            width: 100%;
+                            height: 25px;
+                            color: #8F9598;
+                            font-family: Roboto;
+                            font-weight: regular;
+                            font-size: 12px;
+                            line-height: 25px;
+                            letter-spacing: 0px;
+                            text-align: left;
+
+                            .infoTitleFloatButton {
+                                width: 12px;
+                                height: 16px;
+                                float: right;
+                                margin-top: 4px;
+                                cursor: pointer;
+                            }
+                        }
+
+                        .infoContent {
+                            width: 100%;
+                            height: calc(100% - 25px);
+                            font-size: 0;
+
+                            .infoLittleBlock {
+                                display: inline-block;
+                                width: auto;
+                                height: 24px;
+                                line-height: 24px;
+                                white-space: nowrap;
+                                margin-right: 16px;
+
+                                .infoTitle {
+                                    display: inline-block;
+                                    color: #FFEBC8;
+                                    font-family: Microsoft YaHei;
+                                    font-weight: regular;
+                                    font-size: 12px;
+                                    line-height: 24px;
+                                    letter-spacing: 0px;
+                                    text-align: left;
+                                }
+
+                                .infoContent {
+                                    display: inline-block;
+                                    color: #F9C152;
+                                    font-family: Roboto;
+                                    font-weight: medium;
+                                    font-size: 12px;
+                                    line-height: 24px;
+                                    letter-spacing: 0px;
+                                    text-align: left;
+                                    margin-left: 4px;
+                                }
+                            }
+
+                        }
+
+
+                    }
+
+                    .infoBlcok:first-child {
+                        margin-top: 28px;
+                    }
+
+
+                    /* scroll bar */
+                    &::-webkit-scrollbar {
+                        width: 8px;
+                        height: 8px;
+                        position: absolute;
+                    }
+
+                    &::-webkit-scrollbar-track {
+                        background-color: rgba(18, 18, 21, 1);
+                        border-radius: 8px;
+                    }
+
+                    &::-webkit-scrollbar-track-piece {
+                        background-color: transparent;
+                    }
+
+                    &::-webkit-scrollbar-corner {
+                        background-color: rgba(18, 18, 21, 1);
+                    }
+
+                    &::-webkit-scrollbar-thumb {
+                        position: fixed;
+                        background-color: rgba(37, 51, 48, 1);
+                        border-radius: 8px;
+                    }
+
+                    &::-webkit-scrollbar-thumb:hover {
+                        background-color: rgba(37, 51, 48, 1);
+                    }
+
+                    &::-webkit-scrollbar-thumb:active {
+                        background-color: rgba(37, 51, 48, 1);
+                    }
+
+
+                }
+
+            }
+        }
+    }
+
+
+}
+
+
+.tableCellRender {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.tableCellyellow {
+    color: #F9C152;
+}
+
+// 流水界面第一个状态
+.columnnTag{
+    width: 16px;
+    height: 16px;
+    line-height: 13px;
+    font-size: 12px;
+    text-align: center;
+}
+.colorEdit{
+    color: #E35B10;
+    border: 1px solid #E35B10;
+}
+.colorCancel{
+    color: #8F9598;
+    border: 1px solid #8F9598;
+}
+:global{
+    /*入场动画开始*/
+    .fade-enter {
+        transform: translateX(-100%);
+    }
+
+    /*入场动画过程*/
+    .fade-enter-active {
+        transform: translateX(0);
+        transition: all 0.2s ease-in;
+    }
+
+    /*入场动画结束*/
+    .fade-enter-done {
+        transition: all 0.2s ease-in;
+    }
+
+    /*离场动画开始*/
+    .fade-exit {
+        transform: translateX(0);
+    }
+
+    /*离场动画过程*/
+    .fade-exit-active {
+        transform: translateX(-100%);
+        transition: all 0.2s ease-in;
+    }
+
+    /*离场动画结束*/
+    .fade-exit-done {
+        opacity: 0;
+    }
+
+    /*页面第一次加载时的开始状态*/
+    .fade-appear {
+        transform: translateX(-100%);
+    }
+
+    /*页面第一次加载时的动画过程*/
+    .fade-appear-active {
+        transform: translateX(0);
+        transition: all 0.2s ease-in;
+    }
+}

@@ -1,0 +1,76 @@
+.sidebarMenuContainer {
+  height: calc(100% - 64px);
+  background: #1E2423;
+
+  :global {
+    .ant-menu {
+      background: #1E2423;
+      color: #8F9598;
+      font-family: Microsoft YaHei;
+      font-weight: regular;
+      font-size: 12px;
+    }
+
+    .ant-menu-submenu>.ant-menu {
+      background: #1E2423;
+      font-family: Microsoft YaHei;
+      font-weight: regular;
+      font-size: 12px;
+    }
+
+    .ant-menu-item>a {
+      color: #8F9598;
+    }
+
+    .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+      background-color: unset;
+
+      span {
+        color: #F9C152;
+      }
+    }
+
+    .ant-menu-vertical .ant-menu-item::after,
+    .ant-menu-vertical-left .ant-menu-item::after,
+    .ant-menu-vertical-right .ant-menu-item::after,
+    .ant-menu-inline .ant-menu-item::after {
+      border-right: 2px solid #F9C152;
+      height: 16px;
+      margin-top: 12px;
+    }
+
+    .ant-menu-inline,
+    .ant-menu-vertical,
+    .ant-menu-vertical-left {
+      border-right: 1px solid #1E2423;
+    }
+
+    .ant-menu-item:hover,
+    .ant-menu-item-active,
+    .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
+    .ant-menu-submenu-active,
+    .ant-menu-submenu-title:hover,
+    .ant-menu-item>a:hover,
+    .ant-menu-submenu-selected {
+      color: #F9C152;
+    }
+
+    .ant-menu-item:active, .ant-menu-submenu-title:active{
+      background: #1E2423;
+    }
+    // 子菜单下拉箭头图标
+    .ant-menu-submenu-vertical > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::after, .ant-menu-submenu-vertical-left > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::after, .ant-menu-submenu-vertical-right > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::after, .ant-menu-submenu-inline > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::after, .ant-menu-submenu-vertical > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::before, .ant-menu-submenu-vertical-left > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::before, .ant-menu-submenu-vertical-right > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::before, .ant-menu-submenu-inline > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::before{
+      background:  linear-gradient(to right, #F9C152, #F9C152);
+    }
+
+  }
+
+  .menuLogo{
+    min-height: 24px;
+    font-size: 24px;
+    min-width: 24px;
+    margin-right: 10px;
+    vertical-align: middle;
+    margin-left: -5px;
+  }
+}

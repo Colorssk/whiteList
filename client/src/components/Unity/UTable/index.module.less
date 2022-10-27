@@ -1,0 +1,68 @@
+.UTableContainer{
+  display: inline-block;
+    :global{
+        .ant-table-fixed-header > .ant-table-content > .ant-table-scroll > .ant-table-body{
+          background: rgba(30,36,36,1);
+        }
+        .ant-table-thead, .ant-table-thead > tr > th {
+            background: rgba(30,36,36,1);
+            color: rgba(29,107,91,1);
+        }
+        .ant-table-thead, .ant-table-thead > tr > th:not(:last-child){
+          border-right: 2px solid #101413 !important;
+        }
+        .ant-table-header{
+          background: rgba(30,36,36,1);
+        }
+        .ant-table-row{
+          background: rgba(16,20,21,1);
+          color: rgba(250,210,115,1);
+        }
+        .ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td, .ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td, .ant-table-thead > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td, .ant-table-tbody > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td{
+          background-color: rgba(38, 59, 65, 1);
+        }
+        .ant-table-tbody > tr > td{
+          border-color: rgba(32,36,37,1);
+        }
+        .ant-table-thead > tr > th{
+          border-color: transparent;
+        }
+        /* scroll bar */
+        ::-webkit-scrollbar {
+          width: 8px;
+          height: 8px;
+          position: absolute;
+        }
+      
+        ::-webkit-scrollbar-track {
+          background-color: rgba(18,18,21,1);
+          border-radius: 8px;
+        }
+      
+        ::-webkit-scrollbar-track-piece {
+          background-color: transparent;
+        }
+      
+        ::-webkit-scrollbar-corner {
+          background-color: rgba(18,18,21,1);
+        }
+      
+        ::-webkit-scrollbar-thumb {
+          position: fixed;
+          background-color: rgba(37,51,48,1);
+          border-radius: 8px;
+        }
+      
+        ::-webkit-scrollbar-thumb:hover {
+          background-color: rgba(37,51,48,1);
+        }
+      
+        ::-webkit-scrollbar-thumb:active {
+          background-color: rgba(37,51,48,1);
+        }
+        .ant-table-filter-dropdown{
+          background-color: rgba(37,51,48,1);
+        }
+
+    }
+}

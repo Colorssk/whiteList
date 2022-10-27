@@ -1,0 +1,108 @@
+:global {
+    //common---table
+    .ant-table-bordered.ant-table-fixed-header .ant-table-header+.ant-table-body>table,
+    .ant-table-bordered.ant-table-fixed-header .ant-table-body-inner>table {
+        border: none;
+    }
+    .ant-table-thead > tr, .ant-table-tbody > tr{
+        height: 32px;
+        line-height: 32px;
+    }
+    .ss-table .ant-table-header::-webkit-scrollbar-track {
+        border-radius: unset;
+    }
+
+    .ss-table .ant-table-body::-webkit-scrollbar{
+        height: 8px;
+    }
+    .ant-table-bordered.ant-table-fixed-header .ant-table-header > table{
+        border-left: none;
+        border-top: none;
+    }
+    // 异常: 列表固定会出现滚动和空隙
+    .ant-table-body-inner{
+        overflow-y: hidden !important;
+    }
+    .ant-table-row-cell-break-word{
+        height: 24px;
+    }
+    // 左上角样式圆角异常
+    .ant-table-bordered.ant-table-fixed-header .ant-table-header > table{
+        border-radius: 0;
+        background: #1E2423;
+    }
+    // .ant-table.ant-table-scroll-position-left .ant-table-fixed-left{
+    //     margin-top: 2px !important;
+    // }
+    // .ant-table-body{
+    //     padding-top: 2px !important;
+    // }
+
+    // style dark
+
+    .ant-table-thead > tr > th.ant-table-column-has-actions.ant-table-column-has-sorters:hover{
+        background: #1E2423 !important;
+    }
+    
+    .ant-table-thead > tr, .ant-table-tbody > tr{
+        background: #101414;
+    }
+    .ant-table-bordered .ant-table-thead > tr > th, .ant-table-bordered .ant-table-tbody > tr > td{
+        border-right: none !important;
+        border-bottom: 1px solid #1E2423 !important;
+    }
+    .ant-table-thead>tr:first-child>th {
+        vertical-align: middle;
+        color: #136C5E;
+        font-family: Microsoft YaHei;
+        font-weight: regular;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+
+    .ss-table .ant-table-thead>tr>th {
+        background: #1E2423;
+    }
+
+    .ant-table-bordered.ant-table-fixed-header .ant-table-header>table {
+        border-color: #1E2423 !important;
+    }
+    .ant-table-bordered.ant-table-fixed-header .ant-table-header>table {
+        border-top: 1px solid #193D37;
+        border-left: 1px solid #193D37;
+    }
+    .ant-table-row-level-0{
+        background: #1E2423;
+    }
+    .ant-table-row-hover > td{
+        background: #193D37 !important;
+    }
+    //scroll
+    // ::-webkit-scrollbar-corner {
+    //     background-color: #183b35;
+    // }
+    ::-webkit-scrollbar-track {
+        background-color: rgba(18,18,21,1) !important;
+    }
+    
+    ::-webkit-scrollbar-track-piece {
+        background-color: transparent;
+    }
+    
+    ::-webkit-scrollbar-corner {
+        background-color: rgba(18,18,21,1) !important;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background-color: rgba(37,51,48,1) !important;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(37,51,48,1) !important;
+    }
+    
+    ::-webkit-scrollbar-thumb:active {
+        background-color: rgba(37,51,48,1) !important;
+    }
+  
+}

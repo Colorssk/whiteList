@@ -1,0 +1,180 @@
+.appcontainer {
+  background-color: rgba(7, 6, 7, 1);
+  position: relative;
+  height: 100%;
+  padding: 12px;
+
+  .headerTitleContainer {
+    display: block;
+    width: 100%;
+    height: 55px;
+    position: relative;
+    line-height: 55px;
+    text-align: left;
+    color: #FFEBC8;
+    font-family: Microsoft YaHei;
+    font-weight: regular;
+    font-size: 12px;
+    letter-spacing: 0px;
+
+
+    .headerTitleRightContainer {
+      float: right;
+      width: 25%;
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: row;
+      align-items: center;
+
+      .headerTitleRightInput {
+        flex: 3;
+        padding-right: 4px;
+      }
+
+      .headerTitleRightButton {
+        flex: 1;
+      }
+    }
+  }
+
+  .searchContainer {
+    width: 100%;
+    padding: 6px;
+    border-radius: 2px;
+    margin-bottom: 8px;
+    background: #101414;
+    position: relative;
+    transition: max-height 0.6s ease;
+    overflow: hidden;
+    will-change: max-height;
+    max-height: 35px;
+
+    .searchContainerLeftContainer {
+      display: inline-block;
+      width: 84px;
+      vertical-align: top;
+
+      .searchLeftButtonContainer{
+        width: 64px;
+        display: inline-block;
+
+        :global{
+          .ant-btn{
+            padding: 0 4px;
+          }
+        }
+
+        .searchContainerLeftButton {
+          color: #000000;
+          font-family: Roboto;
+          font-weight: bold;
+          line-height: 22px;
+          letter-spacing: 0px;
+          text-align: center;
+        }
+
+      }
+
+      
+    }
+
+    .searchContainerRightContainer {
+      display: inline-block;
+      width: calc(100% - 84px);
+    }
+
+
+    &.unfold {
+      max-height: 200px;
+    }
+
+    .expandIconContainer {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      bottom: 0;
+      left: calc(50% - 12px);
+      cursor: pointer;
+
+
+      .triangleIconTop {
+        position: absolute;
+        right: 8px;
+        top: calc(50% + 8px);
+        width: 8px;
+        height: 8px;
+        margin-top: -6px;
+        border-right: 1px solid #F9C152;
+        border-bottom: 1px solid #F9C152;
+        transform: rotate(225deg);
+        content: '';
+      }
+
+      .triangleIconBottom {
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        width: 8px;
+        height: 8px;
+        margin-top: 7px;
+        border-right: 1px solid #F9C152;
+        border-bottom: 1px solid #F9C152;
+        transform: rotate(225deg);
+        content: '';
+        background: #070607;
+      }
+    }
+
+
+    .filterItemContainer {
+      display: inline-block;
+      width: auto;
+      margin-bottom: 8px;
+      margin-right: 26px;
+    }
+
+    .searchFooterContainer {
+      width: 100%;
+      display: block;
+      height: 24px;
+      padding-left: 84px;
+
+      // 发行日
+      .issueDate {
+        display: inline-block;
+        margin-right: 8px;
+        line-height: 20px;
+        white-space: nowrap;
+        border-radius: 2px;
+        color: #136C5E;
+        background: #1E2423;
+        font-family: Microsoft YaHei;
+        font-weight: regular;
+        font-size: 12px;
+        letter-spacing: 0px;
+        text-align: left;
+        width: 60px;
+        padding-left: 8px;
+      }
+
+      // 日期
+      .dateContainer {
+        display: inline-block;
+        margin-right: 24px;
+      }
+    }
+  }
+}
+
+.tableCellRender{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+:global{
+  .hightLightRow{
+    background: #292113 !important;
+  }
+}

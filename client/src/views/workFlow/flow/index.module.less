@@ -1,0 +1,78 @@
+.flowContainer{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+   
+
+    .partContainer{
+        height: auto;
+        display: flex;
+        width: auto;
+
+
+        .circleContainer{
+            width: 40px;
+            height: 70px;
+            display: inline-block;
+            .circle{
+                width:  40px;
+                height: 40px;
+                border-radius: 50%;
+                color:#FFEBC8;
+                border: 4px solid #060707;
+                font-family: PingFang SC;
+                font-weight: medium;
+                font-size: 12px;
+                line-height: 32px;
+                letter-spacing: 0px;
+                text-align: center;
+                background: #1E2423;
+            }
+    
+            .circleActive{
+                color: #F9C152;
+                border-color: #F9C152;
+            }
+    
+            .bottomText{
+                width: 40px;
+                height: 30px;
+                color: #8F9598;
+                font-family: Roboto;
+                font-weight: medium;
+                font-size: 12px;
+                line-height: 30px;
+                letter-spacing: 0px;
+                text-align: center;
+                white-space: nowrap;
+            }
+
+            .bottomTextActive{
+                color: #F9C152;
+            }
+
+        }
+    
+        .lineContainer{
+            display: inline-block;
+            width: 160px;
+            height: 40px;
+            vertical-align: top;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            .lineProcess{
+                width: 100%;
+                height: 6px;
+                background: #060707;
+    
+                .process{
+                    height: 100%;
+                    background: #F9C152;
+                }
+            }
+        }
+    }
+}

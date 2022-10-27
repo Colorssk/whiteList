@@ -1,0 +1,396 @@
+// 添加报价样式
+.addModalContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    .leftContainer{
+        flex-basis: 230px;
+        width: 230px;
+        height: 452px;
+        padding-right: 19px;
+        padding-left: 10px;
+        border-right: 1px solid #253330;
+        .modalLineBlock{
+            height: 24px;
+            width: 100%;
+            border-radius: 2px;
+            background: #1E2423;
+            color: #FFEBC8;
+            font-family: Microsoft YaHei;
+            font-weight: regular;
+            font-size: 12px;
+            line-height: 24px;
+            letter-spacing: 0px;
+            text-align: left;
+            padding-left: 8px;
+            margin-bottom: 8px;
+               
+            .modalInfoStyle{
+                color: #F9C152;
+                font-family: Microsoft YaHei;
+                font-weight: regular;
+                font-size: 12px;
+                line-height: 24px;
+                letter-spacing: 0px;
+                text-align: left;
+            }
+        }
+
+        .selectContainer{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            background: transparent;
+            padding-left: 0;
+
+            .modalSelectLabel{
+                width: 72px;
+                flex-basis: 72px;
+                height: 24px;
+                border-radius: 2px;
+                background: #1E2423;
+                color: #FFEBC8;
+                font-family: Microsoft YaHei;
+                font-weight: regular;
+                font-size: 12px;
+                line-height: 24px;
+                letter-spacing: 0px;
+                text-align: left;
+                padding-left: 8px;
+            }
+
+            .modalSelectContainer{
+                width: calc(100% - 76px);
+                height: 24px;
+                margin-left: 4px;
+            }
+        }
+
+        .noteContainer{
+            width: 100%;
+            height: 100%;
+
+            .noteTitle{
+                width: 100%;
+                height: 24px;
+                color: #8F9598;
+                font-family: Roboto;
+                font-weight: medium;
+                font-size: 12px;
+                line-height: 24px;
+                letter-spacing: 0px;
+                text-align: left;
+            }
+
+            .textAreaContainer{
+                width: 100%;
+                height: calc(100% - 24px);
+            }
+
+        }
+    }
+
+    .addrightCOntainer{
+        flex-basis: calc(100% - 230px);
+        width: calc(100% - 230px);
+        height: 452px;
+        padding-right: 10px;
+        padding-left: 20px;
+        .actionContainer{
+            width: 100%;
+            display: flex;
+            height: 24px;
+            flex-direction: row;
+            justify-content: flex-end;
+            margin-top: 4px;
+        }
+
+        .headerContainer{
+            width: 100%;
+            height: 24px;
+            background: #1E2423;
+            display: flex;
+            padding-left: 8px;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 4px;
+            color: #136C5E;
+            font-family: Microsoft YaHei;
+            font-weight: regular;
+            font-size: 12px;
+            letter-spacing: 0px;
+            text-align: left;
+
+            .coumpContainerSplit{
+                border-right: 1px solid#101413;
+                ;
+            }
+        }
+
+        // 操作行
+        .actionTableContainer{
+            width: 100%;
+            height: calc(100% - 56px);
+            overflow-y: auto;
+            overscroll-behavior: contain;
+
+            .lineContainer{
+                width: 100%;
+                height: 32px;
+                display: flex;
+                padding-left: 8px;
+                justify-content: flex-start;
+                align-items: center;
+                border-bottom: 1px solid #1E2423;
+            }
+
+            /* scroll bar */
+            &::-webkit-scrollbar {
+                width: 8px;
+                height: 8px;
+                position: absolute;
+            }
+
+            &::-webkit-scrollbar-track {
+                background-color: rgba(18, 18, 21, 1);
+                border-radius: 8px;
+            }
+
+            &::-webkit-scrollbar-track-piece {
+                background-color: transparent;
+            }
+
+            &::-webkit-scrollbar-corner {
+                background-color: rgba(18, 18, 21, 1);
+            }
+
+            &::-webkit-scrollbar-thumb {
+                position: fixed;
+                background-color: rgba(37, 51, 48, 1);
+                border-radius: 8px;
+            }
+
+            &::-webkit-scrollbar-thumb:hover {
+                background-color: rgba(37, 51, 48, 1);
+            }
+
+            &::-webkit-scrollbar-thumb:active {
+                background-color: rgba(37, 51, 48, 1);
+            }
+        }
+    }
+
+
+
+    //checkbox
+    .coumpContainer{
+        flex-basis: 122px;
+        width: 122px;
+        height: 24px;
+        margin-left: 14px;
+        line-height: 24px;
+                        
+    }
+
+    .calculateContainer{
+        width: calc(100% - 152px);
+        flex-basis: calc(100% - 152px);
+        line-height: 24px;
+        padding-left: 9px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .unitContainer{
+            position: relative;
+            width: 24px;
+            border-radius: 2px;
+            background: #253330;
+            flex-basis: 24px;
+            margin-right: 4px;
+            color: #FFEBC8;
+            font-family: Roboto;
+            font-size: 12px;
+            line-height: 24px;
+            letter-spacing: 0px;
+            text-align: center;
+            cursor: pointer;
+
+
+            .unitIcon{
+                width: 12px;
+                height: 12px;
+                position: absolute;
+                bottom: -3px;
+                right: -3px;
+                transform: rotate(135deg);
+            }
+        }
+    }
+
+
+    // checkbox
+    .checkBoxContainer{
+        flex-basis: 16px;
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        border-radius: 2px;
+        background: #101414;
+        border: 1px solid #253330;
+        cursor: pointer;
+    }
+
+    //some be selected
+    .hasSelectedContain{
+        width: 40%;
+        height: 40%;
+        margin-top: 30%;
+        margin-left: 30%;
+        background: #F9C152;
+    }
+
+    .checkBoxContainerActive{
+        border-radius: 2px;
+        background: #060707;
+        border: 1px solid #F9C152;
+        color: #F9C152;
+        font-size: 12px;
+        line-height: 12px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+}
+
+
+// 编辑报价样式
+.editContent{
+    width: calc(100% - 80px);
+    margin-left: 40px;
+    margin-top: 40px;
+    height: auto;
+
+    .titleContainer{
+        height: 24px;
+        color: #00B563;
+        font-family: Microsoft YaHei;
+        font-weight: regular;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-bottom: 16px;
+    }
+    
+    .bodyContainer{
+        display: flex;
+        flex-direction:  row;
+        justify-content: flex-start;
+        width: 100%;
+
+        .leftContainer{
+            width: calc(50% - 12px);
+            flex-basis: calc(50% - 12px);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+
+
+            .lineBlock{
+                width: 100%;
+                margin-bottom: 8px;
+                height: 24px;
+                border-radius: 2px;
+                background: #1E2423;
+                padding-left: 8px;
+                color: #FFEBC8;
+                font-family: Microsoft YaHei;
+                font-weight: regular;
+                font-size: 12px;
+                line-height: 24px;
+                letter-spacing: 0px;
+                text-align: left;
+
+                &>span{
+                    color: #F9C152;
+                    font-family: Microsoft YaHei;
+                    font-weight: regular;
+                    font-size: 12px;
+                    line-height: 24px;
+                    letter-spacing: 0px;
+                    text-align: left;
+                }
+            }
+
+        }
+
+        .rightContainer{
+            width: calc(50% - 12px);
+            flex-basis: calc(50% - 12px);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-left: 24px;
+            padding-bottom: 8px;
+
+            .lineBlcok{
+                width: 100%;
+                height: 24px;
+                flex-basis: 24px;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+
+                .labelLeft{
+                    flex-basis: 88px;
+                    width: 88px;
+                    border-radius: 2px;
+                    background: #1E2423;
+                    padding-left: 8px;
+                    
+                }
+
+                .actionRight{
+                    flex-basis: calc(100% - 92px);
+                    width: calc(50% - 92px);
+                    margin-left: 4px;
+                    height: 24px;
+                }
+            }
+
+            .lastLineBlock{
+                background:  unset;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+
+                .labelLeft{
+                    flex-basis: 24px;
+                    width: 24px;
+                    border-radius: 2px;
+                    background: #253330;
+                    color: #FFEBC8;
+                    font-family: Microsoft YaHei;
+                    font-weight: regular;
+                    font-size: 12px;
+                    line-height: 24px;
+                    letter-spacing: 0px;
+                    text-align: left;                    
+                }
+
+                .actionRight{
+                    flex-basis: calc(100% - 92px);
+                    width: calc(50% - 92px);
+                    margin-left: 4px;
+                    height: 24px;
+                }
+            }
+        }
+    }
+
+}

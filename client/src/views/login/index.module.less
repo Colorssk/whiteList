@@ -1,0 +1,122 @@
+.loginContainer {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background: #060707;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .loginFormContainer{
+    width: 720px;
+    background-size: 100% 100%;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    position: relative;
+    height: 516px;
+
+    .loginTitleTop{
+      position: absolute;
+      right: 0;
+      top: 293px;
+      width: 354px;
+      text-align: left;
+      color: #FFEBC8;
+      font-family: Microsoft YaHei;
+      font-weight: regular;
+      font-size: 48px;
+      letter-spacing: -1.5px;
+    }
+
+    .loginTitleBottom{
+      position: absolute;
+      right: 0;
+      top: 354px;
+      width: 354px;
+      text-align: left;
+      color: #136C5E;
+      font-family: Microsoft YaHei;
+      font-weight: regular;
+      font-size: 48px;
+      line-height: 72px;
+      letter-spacing: -1.5px;
+      text-align: left;
+    }
+
+    .logoImage{
+      width: 158px;
+      height: 104px;
+      margin-top: 64px;
+      margin-left: 105px;
+    }
+  }
+
+  & > .title {
+    color: #eee;
+    font-size: 26px;
+    font-weight: 400;
+    margin: 0px auto 30px auto;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .spin-wrap {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    line-height: 90vh;
+    z-index: 999;
+  }
+  .content {
+    position: absolute;
+    background-color: #fff;
+    left: 64px;
+    top: 208px;
+    width: 320px;
+    background: transparent;
+
+    .footerInfo{
+      width: 240px;
+      text-align: right;
+      color: #136C5E;
+      font-family: Microsoft YaHei;
+      font-weight: regular;
+      font-size: 12px;
+      letter-spacing: 0px;
+      text-align: right;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .title {
+      text-align: center;
+      margin: 0 0 30px 0;
+    }
+    .two-button-wrap {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .row-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .user-type-button {
+      width: 45%;
+    }
+
+    .loginFormButton {
+      width: 100%;
+      height: 40px;
+    }
+    .loginFormForgot {
+      float: right;
+    }
+  }
+}

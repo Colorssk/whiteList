@@ -1,0 +1,86 @@
+.sliderFooterContainer{
+    width:100%;
+    height: auto;
+    position:absolute;
+    bottom: 0;
+    word-wrap:break-word;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-bottom: 24px;
+    padding-left: 28px;
+    cursor: pointer;
+
+    .bottomMenuContainer{
+        flex: 1;
+        width: 100%;
+
+        .footerBlock{
+            width: calc(100% - 32px);
+            text-align: left;
+            height: 24px;
+            line-height: 24px;
+            color: #8F9598;
+            font-family: Microsoft YaHei;
+            font-weight: regular;
+            font-size: 12px;
+            letter-spacing: 0px;
+            margin-top: 24px;
+
+
+            .footerBlockIcon{
+                width: 24px;
+                height: 24px;
+                margin-right: 4px;
+                vertical-align: top;
+            }
+
+
+            .footerAppear{
+                display: inline-block;
+                width: 0;
+            }
+
+            .footerAppearAnimation{
+                animation: width-appear  0.5s;
+                white-space: nowrap;
+            }
+
+            @keyframes width-appear {
+                from {
+                    opacity: 0;
+                    width: 0;
+                }
+                to{
+                    opacity: 1;
+                    width: 100px;
+                }
+            }
+        }
+
+        .isHover{
+            &:hover{
+                border-radius: 2px;
+                background: #253330;
+            }
+        }
+    }
+
+    .loginLogo{
+        flex: 1;
+        width: 24px;
+        height: 24px;
+        border-radius: 4px;
+        background: #1360A8;
+        color: #FFEBC8;
+        font-family: Sumscope;
+        font-weight: medium;
+        font-size: 12px;
+        line-height: 24px;
+        letter-spacing: 0px;
+        text-align: center;
+        margin-top: 24px;
+    }
+}

@@ -1,0 +1,106 @@
+.headerMenuContentContainer {
+    width: 100%;
+    min-height: 400px;
+
+    .headerConrtainer {
+        width: 100%;
+        height: auto;
+
+
+        .topRightInfo {
+            text-align: right;
+            width: 80%;
+            margin-left: 10%;
+            color: @color_yellow;
+            font-size: 14px;
+        }
+
+        .containerTitleHeader {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 4px;
+            margin-bottom: 4px;
+
+            .titleInfo {
+                flex-basis: 35%;
+                width: 35%;
+                margin-left: 10%;
+                text-align: left;
+                height: 24px;
+                line-height: 24p x;
+                color: rgba(148, 153, 156, 1);
+
+                &>span {
+                    color: white;
+                }
+            }
+        }
+
+    }
+
+    .bodyContainer {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+
+        .leftContainer {
+            flex-basis: 35%;
+            width: 35%;
+            height: auto;
+            border: 1px solid @border_dark;
+            box-sizing: border-box;
+        }
+
+        .actionButtonContainer {
+            display: flex;
+            flex-basis: 10%;
+            width: 10%;
+            height: 300px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .rightContainer {
+            flex-basis: 35%;
+            width: 35%;
+            height: auto;
+            border: 1px solid @border_dark;
+            box-sizing: border-box;
+        }
+
+        .lineBlcok {
+            position: relative;
+            width: 100%;
+            color: white;
+            height: 24px;
+            line-height: 16px;
+            font-size: 12px;
+            cursor: pointer;
+            user-select: none;
+            padding-top: 4px;
+            padding-left: 8px;
+        }
+        .lineBlcok:nth-last-child(1){
+            margin-bottom: 8px;
+        }
+
+        .lineBlockMoving {
+            background: @line_hover_bg;
+        }
+
+        .directionLineHeight {
+            border-bottom: 2px solid @line_hover_bg;
+        }
+
+        .lineBlockactive {
+            background: @line_active_bg;
+        }
+
+    }
+
+
+}

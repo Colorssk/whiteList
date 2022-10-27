@@ -1,0 +1,62 @@
+.extendInput{
+    border-radius: 2px !important;
+    background: #0C0F0E !important;
+    border: 1px solid #253330 !important;
+    color: #FFEBC8 !important;
+    font-family: Roboto !important;
+    font-weight: medium !important;
+    font-size: 12px !important;
+    letter-spacing: 0px !important;
+    text-align: justified !important;
+
+    /* scroll bar */
+    &::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+        position: absolute;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: rgba(18, 18, 21, 1);
+        border-radius: 8px;
+    }
+
+    &::-webkit-scrollbar-track-piece {
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-corner {
+        background-color: rgba(18, 18, 21, 1);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        position: fixed;
+        background-color: rgba(37, 51, 48, 1);
+        border-radius: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(37, 51, 48, 1);
+    }
+
+    &::-webkit-scrollbar-thumb:active {
+        background-color: rgba(37, 51, 48, 1);
+    }
+}
+
+.SInput{
+    :global{
+        .ant-input{
+            border-radius: 2px;
+            background: #0C0F0E;
+            border: 1px solid #1E2423;
+            color: #FFEBC8;
+            font-family: Roboto;
+            font-weight: medium;
+            font-size: 16px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+    }
+}
+
